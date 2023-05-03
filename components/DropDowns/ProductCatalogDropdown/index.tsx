@@ -24,7 +24,7 @@ const ProductCatalogDropdown = ({ catalogShow }: { catalogShow: boolean }) => {
                     ))
                 }
             </div>
-            <div className={catalogShow ? 'block' : 'hidden'}>
+            <div className={`${catalogShow ? 'hidden md:block' : 'hidden'}`}>
                 {
                     productCatalogs.map(item => item.id == showedCatalogItem ?
                         item.dropdown ?
