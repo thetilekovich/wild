@@ -53,17 +53,18 @@ const Header = () => {
                                 <p className='text-lg'>Войти</p>
                             </Link>
                             {
-                                auth ? <>
+                                auth ?
                                     <Link href="/favorites" className='mx-3 flex flex-col justify-center items-center' >
                                         <Heart size={20} />
                                         <p className='text-lg'>Избранное</p>
                                     </Link>
-                                    <Link href="basket" className='mx-3 flex flex-col justify-center items-center'>
-                                        <Basket size={20} />
-                                        <p className='text-lg'>Корзина</p>
-                                    </Link>
-                                </> : null
+
+                                    : null
                             }
+                            <Link href="basket" className='mx-3 flex flex-col justify-center items-center'>
+                                <Basket size={20} />
+                                <p className='text-lg'>Корзина</p>
+                            </Link>
                         </nav>
                     </div>
                 </div>
