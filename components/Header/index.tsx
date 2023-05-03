@@ -14,7 +14,7 @@ import Person from '@/public/icons/Person';
 
 
 const Header = () => {
-    const { location } = useAppSelector(s => s.base)
+    const { location, auth } = useAppSelector(s => s.base)
     const [searchInputValue, setSearchInputValue] = useState('')
     return (
         <header id='header'>
@@ -52,17 +52,20 @@ const Header = () => {
                                 <Person size={20} />
                                 <p className='text-lg'>Войти</p>
                             </Link>
-                            <Link href="/favorites" className='mx-3 flex flex-col justify-center items-center' >
-                                <Heart size={20} />
-                                <p className='text-lg'>Избранное</p>
-                            </Link>
-                            <Link href="basket" className='mx-3 flex flex-col justify-center items-center'>
-                                <Basket size={20} />
-                                <p className='text-lg'>Корзина</p>
-                            </Link>
+                            {
+                                auth ? <>
+                                    <Link href="/favorites" className='mx-3 flex flex-col justify-center items-center' >
+                                        <Heart size={20} />
+                                        <p className='text-lg'>Избранное</p>
+                                    </Link>
+                                    <Link href="basket" className='mx-3 flex flex-col justify-center items-center'>
+                                        <Basket size={20} />
+                                        <p className='text-lg'>Корзина</p>
+                                    </Link>
+                                </> : null
+                            }
                         </nav>
                     </div>
-
                 </div>
             </div>
             <div className='flex lg:hidden items-center justify-center'>

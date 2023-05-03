@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image"
 
 export interface IBaseSlice {
+    auth: boolean | object,
     lang: string,
     UIMode: string,
     wallet: IWalletConst,

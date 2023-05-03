@@ -5,6 +5,7 @@ import rusFlag from '@/public/icons/russia.png'
 
 
 const initialState: IBaseSlice = {
+    auth: false,
     lang: LaConst.RU,
     UIMode: UIModeConst.WHITE,
     wallet: {id: 'RUB', title: 'Российский рубль', icon: rusFlag },
