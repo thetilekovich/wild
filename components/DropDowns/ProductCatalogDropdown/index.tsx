@@ -9,7 +9,7 @@ import { useState } from "react"
 const ProductCatalogDropdown = ({ catalogShow }: { catalogShow: boolean }) => {
     const [showedCatalogItem, setShowedCatalogItem] = useState('-1')
     return (
-        <div className='relative mt-5 '>
+        <div className='relative'>
             <div className="bg-white h-screen overflow-scroll min-w-max rounded-md absolute z-10 py-7 px-10">
                 {
                     productCatalogs.map(item => (
