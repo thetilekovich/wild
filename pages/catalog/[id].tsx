@@ -1,9 +1,9 @@
+import Deploying from '@/components/Deploying'
 import React from 'react'
 
-const CatalogPage = ({params}: {params: string}) => {
-    
+const CatalogPage = () => {
   return (
-    <div>CatalogPage</div>
+    <Deploying/>
   )
 }
 
