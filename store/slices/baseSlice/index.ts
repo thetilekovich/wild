@@ -1,4 +1,4 @@
-import { LaConst, UIModeConst, WalletConsts } from "@/constants/app";
+import { LaConst, UIModeConst } from "@/constants/app";
 import { IBaseSlice } from "@/types/app";
 import { createSlice } from "@reduxjs/toolkit";
 import rusFlag from '@/public/icons/russia.png'
