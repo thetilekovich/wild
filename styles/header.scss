@@ -1,0 +1,20 @@
+.product_catalogs_btn div{
+    width: 26px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.catalogs_show_active div {
+    margin: -2.3px 0;
+}
+.catalogs_show_active div:first-child {
+    transform: rotate(45deg);
+
+}
+.catalogs_show_active div:last-child {
+    transform: rotate(-45deg);
+}
+.catalogs_show_active div:nth-child(2) {
+    opacity: 0;
+}
