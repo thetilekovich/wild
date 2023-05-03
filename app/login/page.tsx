@@ -1,8 +1,11 @@
+import Deploying from '@/components/Deploying'
+import LayoutComponent from '@/components/LayoutComponent'
+import Link from 'next/link'
 import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+      <Deploying/>
   )
 }
 

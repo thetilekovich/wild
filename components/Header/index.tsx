@@ -29,7 +29,7 @@ const Header = () => {
                     </button>
                 </div>
                 <div>
-                    <button className='bg-blue-600 py-1 text-white rounded-md px-3'>Стать продавцом</button>
+                    <Link href='become-a-seller' className='bg-blue-600 py-1 text-white rounded-md px-3'>Стать продавцом</Link>
                 </div>
             </div>
             <div className='flex items-start justify-between'>
@@ -68,7 +68,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex lg:hidden items-center justify-center'>
+            <div className='flex lg:hidden mt-5 items-center justify-center'>
                 <input
                     value={searchInputValue}
                     onChange={(e) => setSearchInputValue(e.target.value)}
