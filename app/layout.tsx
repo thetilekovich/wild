@@ -1,5 +1,7 @@
 import { Providers } from '@/app/provider';
 import '../styles/globals.scss'
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Main page'
@@ -7,15 +9,17 @@ export const metadata = {
 
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
-    
+
   return (
     <html lang="ru">
-      <body>
+      <body className='bg-mobile-body py-2 text-white md:text-black md:bg-white'>
         <Providers>
-            {children}
+          <Header />
+          {children}
+          <Footer />
         </Providers>
-       </body>
-     </html>
+      </body>
+    </html>
   )
 }
 export default RootLayout;

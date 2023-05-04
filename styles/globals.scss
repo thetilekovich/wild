@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *::-webkit-scrollbar {
-    display: none;
-  }
-  
+  display: none;
+}
+
 * {
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

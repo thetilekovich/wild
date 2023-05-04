@@ -1,10 +1,10 @@
 import Deploying from '@/components/Deploying'
 import React from 'react'
 
-const LoginPage = () => {
+const Populars = () => {
   return (
-      <Deploying/>
+    <Deploying/>
   )
 }
 
-export default LoginPage
+export default Populars

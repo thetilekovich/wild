@@ -1,5 +1,5 @@
 "use client";
-import { WalletConsts } from '@/public/data/WalletData';
+import { WalletConsts } from '@/public/data/walletData';
 import changeWallet from '@/store/actions/changeWallet';
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { IWalletConst } from '@/types/app';

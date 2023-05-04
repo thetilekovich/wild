@@ -1,7 +1,7 @@
 import { LaConst, UIModeConst } from "@/constants/app";
 import { IBaseSlice } from "@/types/app";
 import { createSlice } from "@reduxjs/toolkit";
-import rusFlag from '@/public/icons/russia.png'
+import rusFlag from '@/public/icons/Flags/russia.png'
 
 
 const initialState: IBaseSlice = {
@@ -38,6 +38,5 @@ const baseSlice = createSlice({
         }
     }
 })
-
 export default baseSlice.reducer
 export const {setLanguage, setMode, setLocation, setWallet} = baseSlice.actions

@@ -1,12 +1,15 @@
 'use client';
-import LayoutComponent from "@/components/LayoutComponent";
+
+import HomePopulars from "@/components/HomePopulars";
+import HomeWellcome from "@/components/HomeWellcome";
 
 
 
 export default function Home() {
   return (
-      <LayoutComponent>
-
-      </LayoutComponent>
+    <section className="">
+      <HomeWellcome/>
+      <HomePopulars/>
+    </section>
   )
 }

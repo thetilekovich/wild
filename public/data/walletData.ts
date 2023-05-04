@@ -1,10 +1,12 @@
 import { IWalletConst } from "@/types/app"
-import rus from '@/public/icons/russia.png'
-import kgz from '@/public/icons/kyrgyzstan.png'
-import byn from '@/public/icons/belarus.png'
-import amd from '@/public/icons/armenia.png'
-import uzs from '@/public/icons/uzbekistan.png'
-import kzt from '@/public/icons/kazakhstan.png'
+import rus from '@/public/icons/Flags/russia.png'
+import kgz from '@/public/icons/Flags/kyrgyzstan.png'
+import byn from '@/public/icons/Flags/belarus.png'
+import amd from '@/public/icons/Flags/armenia.png'
+import uzs from '@/public/icons/Flags/uzbekistan.png'
+import kzt from '@/public/icons/Flags/kazakhstan.png'
+
+
 export const WalletConsts: IWalletConst[] = [
     {
         id: 'RUB',
