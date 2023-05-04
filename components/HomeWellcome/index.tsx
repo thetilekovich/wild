@@ -11,8 +11,6 @@ import placeHolder from '@/public/images/200x200.png'
 const params = {
     slidesPerView: 1,
     loop: true,
-    clickable: false,
-    pauseOnMouseEnter: true,
     autoplay: {
         delay: 3000,
         disableOnIteraction: false,
@@ -22,9 +20,7 @@ const params = {
 const params1 = {
     slidesPerView: 4,
     loop: true,
-    clickable: false,
     pagination: true,
-    pauseOnMouseEnter: true,
     freeMode: true,
     autoplay: {
         delay: 4000,
@@ -44,18 +40,19 @@ const HomeWellcome = () => {
     return (
         <div className='bg-mobile-content md:bg-white mb-2'>
             <div className='mx-auto py-4' style={{ width: '95%' }}>
-                <div className='mb-10'>
+                <div className='mb-10 relative z-0'>
                     <Swiper
+
                         modules={[Autoplay, Pagination, A11y]}
                         {...params}
                     >
                         {
-                            homeBanner.map(el => (
+                                homeBanner.map(el => (
                                 <SwiperSlide key={el.id}>
-                                    <Image className='rounded-lg  border-solid border-2 w-full border-red-900' src={el.image} alt="" />
+                                    <Image className='rounded-lg border-solid border-2 w-full border-red-900' src={el.image} alt="" />
                                 </SwiperSlide>
-                            ))
-                        }
+                                ))
+                            }
                     </Swiper>
                 </div>
                 <div className='block md:hidden '>
@@ -78,7 +75,7 @@ const HomeWellcome = () => {
                     {
                         homeWelcomeLinks.map(e => (
                             <Link key={e.id} href={e.url} className='flex flex-col justify-start text-center'>
-                                <Image src={placeHolder} alt="" className='mb-2 w-full p-1  border-solid border-2 border-red-900 ' />
+                                <Image src={placeHolder} alt="" className='mb-2 w-full p-1 rounded-md border-solid border-2 border-red-900 ' />
                                 <p>{e.title}</p>
                             </Link>
                         ))

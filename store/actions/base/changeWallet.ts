@@ -1,4 +1,4 @@
-import { setWallet } from "../slices/baseSlice"
+import { setWallet } from "../../slices/baseSlice"
 import { Dispatch } from "@reduxjs/toolkit"
 import { IWalletConst } from "@/types/app"
 

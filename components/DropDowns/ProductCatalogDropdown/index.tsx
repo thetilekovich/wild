@@ -1,5 +1,4 @@
 'use client'
-
 import { productCatalogs } from "@/public/data/productCatalogsData"
 import { IProductCatalogData, IProductCatalogDropdown } from "@/types/product"
 import Image from "next/image"
@@ -9,15 +8,15 @@ import { useState } from "react"
 const ProductCatalogDropdown = ({ catalogShow }: { catalogShow: boolean }) => {
     const [showedCatalogItem, setShowedCatalogItem] = useState('-1')
     return (
-        <div className='relative'>
-            <div className="bg-white h-screen overflow-scroll min-w-max rounded-md absolute z-10 py-7 px-10">
+        <div className='relative z-20'>
+            <div className="bg-white h-screen overflow-scroll min-w-max rounded-md absolute py-7 px-10">
                 {
                     productCatalogs.map(item => (
                         <Link
                         key={item.id}
                             href={`/catalog/${item.id}`}
                             onMouseMove={() => setShowedCatalogItem(item.id)}
-                            className={`${item.id === showedCatalogItem ? 'bg-blue-600 text-white' : ""} py-2 px-4 flex items-center duration-300 rounded-md font-bold cursor-pointer`}>
+                            className={`${item.id === showedCatalogItem ? 'bg-blue-600 text-white' : ""} py-2 px-4 flex items-center duration-1000 rounded-md font-bold cursor-pointer`}>
                             <Image src={item.icon} width={20} height={20} alt='' />
                             <p className="ml-3">{item.title}</p>
                         </Link>
@@ -28,7 +27,7 @@ const ProductCatalogDropdown = ({ catalogShow }: { catalogShow: boolean }) => {
                 {
                     productCatalogs.map(item => item.id == showedCatalogItem ?
                         item.dropdown ?
-                            <div key={item.id} className={`${item.id == showedCatalogItem ? 'translate-x-[250px]' : 'translate-x-0'} h-screen overflow-scroll  duration-700 absolute rounded-md bg-white min-w-max py-7 px-10`}>
+                            <div key={item.id} className={`${item.id == showedCatalogItem ? 'translate-x-[250px]' : 'translate-x-0'} h-screen overflow-scroll  duration-00 absolute rounded-md bg-white min-w-max py-7 px-10`}>
                                 {
                                     item.dropdown.map(subitem => (
                                         <ProductCatalogItem key={subitem.id} item={item} subitem={subitem} />

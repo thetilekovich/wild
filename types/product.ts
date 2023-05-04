@@ -14,18 +14,3 @@ export interface  IProductCatalogDropdown {
 }
 
 
-export interface IProduct {
-    id: number,
-    title: string,
-    description: string,
-    images: StaticImageData[],
-    sellerId: number,
-    price: number,
-    discount: number,
-    popularity: number,
-    feedbacks: [],
-    questions: [],
-    categoryId: number,
-    subcategoryId: number,
-    inStock: number,
-}

@@ -12,9 +12,9 @@ interface SectionHeaderProps {
 
 const SectionHeader: FC<SectionHeaderProps> = ({title, url}) => {
   return (
-    <Link href={url} className={` flex justify-between`}>
-        <p className='font-bold text-2xl text-blue-600'>{title}</p>
-        <ShortArrow color='white' size={30}/>
+    <Link href={url} className={` flex items-center justify-between`}>
+        <h1 className='font-bold text-blue-600' style={{fontSize: '25px'}}>{title}</h1>
+        <ShortArrow size={50}/>
     </Link>
   )
 }

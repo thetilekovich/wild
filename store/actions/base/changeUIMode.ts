@@ -1,4 +1,4 @@
-import { setMode } from "../slices/baseSlice"
+import { setMode } from "../../slices/baseSlice"
 import { Dispatch } from "@reduxjs/toolkit"
 
 const changeUIMode = (mode: string) => {

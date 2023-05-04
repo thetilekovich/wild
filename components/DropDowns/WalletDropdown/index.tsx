@@ -1,6 +1,6 @@
 "use client";
 import { WalletConsts } from '@/public/data/walletData';
-import changeWallet from '@/store/actions/changeWallet';
+import changeWallet from '@/store/actions/base/changeWallet';
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { IWalletConst } from '@/types/app';
 import Image from 'next/image'
